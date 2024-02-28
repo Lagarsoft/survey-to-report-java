@@ -1,5 +1,5 @@
-import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp;
+import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.extensions.jetty.auth.oauth2.LocalServerReceiver;
 import com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeFlow;
 import com.google.api.client.googleapis.auth.oauth2.GoogleClientSecrets;
@@ -111,10 +111,10 @@ public class SheetsQuickstart {
 
         String prompt = "Given the following questions and answers between angle brackets given by an architect who performed the inspection of a building, draft a Building Envelope Assesment Report with an introduction, body and conclusion. Questions and answers:\n<" + text + ">";
 
-        generateCompletion(prompt);
+        generateTextUsingLLM(prompt);
 
     }
-    private static String generateCompletion(String prompt) {
+    private static String generateTextUsingLLM(String prompt) {
         try {
             String token = System.getenv("OPENAI_API_KEY");
             OpenAiService openAiService = new OpenAiService(token,  Duration.ofSeconds(60));
