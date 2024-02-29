@@ -27,4 +27,4 @@ You can also download the credentials.json file by following these steps:
 6. Click OK. The newly created credential appears under OAuth 2.0 Client IDs.
 7. Save the downloaded JSON file as credentials.json, and move the file to your working directory.
 
-To create this documentation, I relied on: https://github.com/TheoKanning/openai-java, which is the community-created library accepted by OpenAI. I also used OpenAI's documentation: https://platform.openai.com/docs/introduction
+To create this documentation, I relied on: https://github.com/TheoKanning/openai-java, which is the community-created library accepted by OpenAI. I also used OpenAI's documentation: https://platform.openai.com/docs/introduction and Google documentation: https://developers.google.com/sheets/api/quickstart/java
